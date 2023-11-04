@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Author: Steve Ward
+        -->
+        <meta charset="utf-8">
+        <title>Advising Appt Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="thankyou.html">
+    </head>
+    <body>
+        <h2>Advising Appointment</h2>
+        <div class="container">
+            <form method="post" action="thankyou.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="Fname">
+                    Name:
+                    <input autofocus type="text" name="fname" id="Fname" required placeholder="First Name"/>
+                </label>
+            <label for="Lname">
+                Last Name:
+                <input type="text" name="Lname"  id="lname" placeholder="Last Name"/>
+            </label>
+            <label for="Email">
+                Email:
+                <input type="email" name="email" id="Email" placeholder="Email"/>
+            </label>
+        </fieldset>
+                <input class="submit" type="submit" value="submit"/>
+            </form>
+        </div>
+    </body>
+</html>
