@@ -12,7 +12,7 @@
     <body>
         <h2>Advising Appointment</h2>
         <div class="container">
-            <form method="post" action="thankyou.html">
+            <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Contact Information</legend>
                 <label for="Fname">
@@ -27,6 +27,46 @@
                 Email:
                 <input type="email" name="email" id="Email" placeholder="Email"/>
             </label>
+        </fieldset>
+        <fieldset>
+            <legend>Reservation Request</legend>
+            <label for="teacher"></label>
+            <select name="teacher" id="teacher">
+                <option value="Mrs. Markley">Mrs. Markley</option>
+                <option value="Dr. Ford">Dr. Ford</option>
+                <option value="Mr. Jackson">Mr. Jackson</option>
+            </select>
+            <label for="month"></label>
+            <select name="month" id="month">
+            <option value="January">January</option>
+            <option value="Febuary">febuary</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+            </select>
+            <input type="number" min="1" step="1" max="12" style="position: initial;width: initial;"/>
+            <input type="radio" name="time" value="AM" style="position: initial;width: initial;"/>AM
+            <input type="radio" name="time" value="PM" style="position: initial;width: initial;"/>PM
+        </fieldset>
+        <fieldset>
+            <legend>Classes You wish to take</legend>
+            <input type="radio" name="class1" value="WebDev" style="position: initial;width: initial;" />WebDev
+            <input type="radio" name="class2" value="C#" style="position: initial;width: initial;" />C#
+            <input type="radio" name="class3" value="Database" style="position: initial;width: initial"/>Database
+            <input type="radio" name="class4" value="CalculusI" style="position: initial;width: initial;"/>Calculus I
+            <input type="radio" name="class5" value="CalculusII" style="position: initial;width: initial;"/>Calulus II
+        </fieldset>
+        <fieldset>
+            <legend>Additional Info</legend>
+            <label for="textarea"></label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10">Any Additonal Information</textarea>
         </fieldset>
                 <input class="submit" type="submit" value="submit"/>
             </form>
