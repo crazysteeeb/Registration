@@ -18,9 +18,22 @@ h2
 }
 label
 {
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.submit
+{
+    width:initial; position: initial;
+}
+@media(max-width: 700px)
+{
+    label
+{
     display: block;
     padding-bottom: 5px;
     position: relative;
+    
 }
 
 input
@@ -29,7 +42,4 @@ input
     left: 15%;
     width: 75%;
 }
-.submit
-{
-    width:initial; position: initial;
 }
